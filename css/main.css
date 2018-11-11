@@ -1,0 +1,36 @@
+/*
+Loading page palette colors
+https://www.canva.com/color-palette/
+----------------------------
+Dark Olive Green #343423
+Silver #D1CABB
+Dim Gray #626053
+Black #161510
+Dark Gray #9B9A8F
+*/
+
+body{
+    background-color: #161510;
+}
+
+#loading{
+    background-color: #161510;
+}
+
+#loading-img{
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px double #D1CABB;
+}
+
+#safe-box{
+    position: relative;
+    display:block;
+    margin: auto;
+    margin-top: 12.5%;
+    display: block;
+    height: 50vh;
+    width: 50vh;
+}
