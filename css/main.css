@@ -16,13 +16,6 @@
     animation-fill-mode: forwards;
 }
 
-#cabinet{
-    width: 50vw;
-    margin-left: 5vw;
-    display: block;
-    border: 5px double #D1CABB;
-}
-
 #safe-box{
     position: relative;
     display:block;

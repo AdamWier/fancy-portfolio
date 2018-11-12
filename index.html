@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -25,7 +28,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <!-- Loading screen -->
         <!-- <div id="loading">
@@ -64,18 +67,28 @@
         <div class="element" id="first">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>Adam Wier</h2>
+          <h2 class="h2-1">Adam Wier</h2>
           <h3>Développeur Web</h3>
           <br/>
           </div>
           </div>
           <div class="row">
-            <div class="col-12 text-center">
-              <img src="images/cabinet.jpg" id="cabinet">
+            <div class="col-6 text-center">
+              <img src="images/cabinet.jpg" id="cabinet" alt="click drawers for information" usemap="cabinetmap">
+              <map name="cabinetmap" id="cabinetmap">
+                <!-- Original image size map; kept for reference 
+                <area shape="rect" coords="0,0,3190,620" href="google.com" alt="about me">
+                <area shape="rect" coords="0,621,3190,1300" href="adam.com" alt="about me">
+                <area shape="rect" coords="0,1301,3190,1940" href="samantha.com" alt="about me">
+                <area shape="rect" coords="0,1941,3190,2560" href="mom.com" alt="about me">
+                <area shape="rect" coords="0,2561,3190,3200" href="jeremy.com" alt="about me">
+                <area shape="rect" coords="0,3201,3190,3830" href="al.com" alt="about me">
+                <area shape="rect" coords="0,3831,3190,4430" href="mauricette.com" alt="about me"> 
+              -->
+              </map>
             </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6 col-12">
+              <div class="col-md-6 col-12" id="info-display">
+                </div>
           <h4>Formation autodidacte en&nbsp:</h4>
           <ul>
           <li>HTML</li>
