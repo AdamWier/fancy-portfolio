@@ -1,0 +1,20 @@
+#navigation{
+  background-color: #161510;
+  overflow:hidden;
+  z-index:1;
+  font-size: 20pt;
+}
+
+#navigation li a{
+    padding-right: 12vw;
+  }
+
+  #navigation a:link{
+    color: #D1CABB;
+      text-decoration:none;
+  }
+  
+  #navigation a:visited{
+    color: #D1CABB;
+        text-decoration:none;
+  } 
