@@ -11,10 +11,25 @@ Dark Gray #9B9A8F
 
 body{
     background-color: #161510;
+    color: #D1CABB;
 }
 
 #loading{
     background-color: #161510;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.loaded{
+    visibility: hidden;
+}
+
+.fadeout{
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #loading-img{
@@ -33,4 +48,9 @@ body{
     display: block;
     height: 50vh;
     width: 50vh;
+}
+
+@keyframes fadeout{
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
