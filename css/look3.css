@@ -1,0 +1,7 @@
+.look3{
+    background-image: url("../backgrounds/background3b.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}

@@ -9,6 +9,13 @@ Black #161510
 Dark Gray #9B9A8F
 */
 
+.look1{
+    background-image: url("../backgrounds/background1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 
 .body1{
     background-color: #343423;

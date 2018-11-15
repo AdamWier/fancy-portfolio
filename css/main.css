@@ -35,6 +35,10 @@ section{
     padding-top: 10vh;
 }
 
+/*.container-fluid{
+    padding-left: 0px
+}*/
+
 @keyframes fadeout{
     from {opacity: 1;}
     to {opacity: 0;}
