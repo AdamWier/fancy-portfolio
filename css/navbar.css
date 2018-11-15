@@ -2,15 +2,11 @@
   background-color: #161510;
   overflow:hidden;
   z-index:1;
-  font-size: calc(2pt + 1vw);
-}
-
-#navigation ul{
-  border: solid white;
+  font-size: calc(3pt + 2.5vh);
 }
 
 #navigation li a{
-  border: solid;
+  margin: calc(2vw);
   }
 
 #navigation a:link{

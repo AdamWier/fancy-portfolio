@@ -30,10 +30,6 @@
     width: 50vh;
 }
 
-#drawer1:hover{
-    background-color: red;
-}
-
 @keyframes fadeout{
     from {opacity: 1;}
     to {opacity: 0;}
