@@ -4,6 +4,10 @@
     height: 100%;
     width: 100vw;
     position: fixed;
+    font-family: 'Amatic SC', "cursive";
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 500%;
 }
 
 .loaded{
