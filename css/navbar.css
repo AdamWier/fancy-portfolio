@@ -2,19 +2,23 @@
   background-color: #161510;
   overflow:hidden;
   z-index:1;
-  font-size: 20pt;
+  font-size: calc(2pt + 1vw);
+}
+
+#navigation ul{
+  border: solid white;
 }
 
 #navigation li a{
-    padding-right: 12vw;
+  border: solid;
   }
 
-  #navigation a:link{
-    color: #D1CABB;
-      text-decoration:none;
+#navigation a:link{
+  color: #D1CABB;
+  text-decoration:none;
   }
   
-  #navigation a:visited{
-    color: #D1CABB;
-        text-decoration:none;
+#navigation a:visited{
+  color: #D1CABB;
+  text-decoration:none;
   } 
