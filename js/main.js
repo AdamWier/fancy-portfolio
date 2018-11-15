@@ -123,6 +123,7 @@ mapHover();
 
 $(window).on("resize", mapHover);
 
+//Images may need to be preloaded??
 
 
 
