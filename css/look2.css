@@ -1,0 +1,9 @@
+#about{
+    background-image: url("../backgrounds/background2.jpg");
+}
+
+#me{
+    border-radius: 100%;
+    height: 10vw;
+    border: solid;
+}

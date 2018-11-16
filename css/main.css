@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 #loading{
     background-color: #161510;
-    z-index: 5;
+    z-index: 50;
     height: 100%;
     width: 100vw;
     position: fixed;
@@ -28,6 +32,84 @@
     display: block;
     height: 50vh;
     width: 50vh;
+}
+
+.container-fluid{
+    padding: 0px
+}
+
+/*Genreal navbar styling */
+.navigation{
+    overflow:hidden;
+    z-index:1;
+    font-size: calc(3pt + 2.5vh);
+  }
+  
+  .navigation li a{
+    margin: calc(2vw);
+    }
+  
+  .navigation a:link{
+    text-decoration:none;
+    }
+    
+  .navigation a:visited{
+    text-decoration:none;
+    } 
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.element{
+    border-radius: 15px;
+}
+
+h2{
+    font-size: 60px;
+  }
+
+  .look{
+    padding-top: 10vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50%;
+}
+
+button:hover{
+    box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .normal-button{
+    margin: 1vh 0vh 1vh 0vh;
+  }
+
+  .d-flex{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list{
+      text-align: left;
+  }
+
+  .list-heading{
+    text-align: left;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 @keyframes fadeout{

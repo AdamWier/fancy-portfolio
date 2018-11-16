@@ -44,78 +44,97 @@ mapHover = function(){
 var textDisplay = document.getElementById("text-display")
 //Map hover events
 $("#drawer1").hover(function(){
-    textDisplay.innerHTML = '<h5>Page vitrine</h5>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Page vitrine</h4>' +
     '<img src="./images/simple-ricks.png" alt="Page de produit" class="preview-pic"><br/>' +
+    '<h5>Projet en <i class="fab fa-html5"></i> et <i class="fab fa-css3-alt"></i></h5>' +
     '<a href="https://codepen.io/donthatedontkill/full/VBVZyo" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button" aria-label="Voir page de produit"><i class="fas fa-eye"></i></button></a>' +
-    '<h5>Objectifs&nbsp:</h5>' +
-        '<ul>' +
+    '<button type="button" class="btn normal-button button1" aria-label="Voir page de produit"><i class="fas fa-eye"></i></button></a>' +
+    '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
+        '<ul class="list">' +
             '<li>Flexbox</li>' +
             '<li>Accessibilité</li>' +
             '<li>Les requêtes médias</li>' +
         '</ul>' +
-        '<strong><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
-        '<button type="button" class="btn normal-button"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
-        'Plus de projets à voir sur mon profil Codepen</strong>'
+    '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
+    'Plus de projets à voir sur mon profil Codepen</h5></div>'
 })
 $("#drawer2").hover(function(){
-    textDisplay.innerHTML = '<h5>Chronomètre Pomodoro</h5>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Chronomètre Pomodoro</h4>' +
     '<img src="./images/pomodoro.png" alt="Chronomètre Pomodoro" class="preview-pic"><br/>' +
+    '<h5>Project en <i class="fab fa-react"></i></h5>' +
     '<a href="https://codepen.io/donthatedontkill/full/dgVdYe/" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button half-size" aria-label="Voir chronomètre pomodoro sur CodePen"><i class="fas fa-eye"></i></button></a>' +
+    '<button type="button" class="btn normal-button double-button button1" aria-label="Voir chronomètre pomodoro sur CodePen"><i class="fas fa-eye"></i></button></a>' +
     '<a href="https://chrome.google.com/webstore/detail/super-pomodoro-timer/jcfdgbccjkljjalphemlfnaahmnfilaa" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button half-size" aria-label="Voir chronomètre pomodoro sur Chrome Store"><i class="fab fa-chrome"></i></button></a>' +
-    '<h5>Objectifs&nbsp:</h5>' +
-        '<ul>' +
+    '<button type="button" class="btn normal-button double-button button1" aria-label="Voir chronomètre pomodoro sur Chrome Store"><i class="fab fa-chrome"></i></button></a>' +
+    '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
+        '<ul class="list">' +
             '<li>React</li>' +
             '<li>CSS Grid</li>' +
             "<li>Deployement d'extension Chrome</li>" +
         '</ul>' +
-    '<strong><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
-    'Plus de projets à voir sur mon profil Codepen</strong>'
+    '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
+    'Plus de projets à voir sur mon profil Codepen</h5></div>'
 })
 $("#drawer3").hover(function(){
-    textDisplay.innerHTML = '<h5>TwitchTV API</h5>' +
+    textDisplay.innerHTML = '<div class="display"><h4>TwitchTV API</h4>' +
     '<img src="./images/twitch.png" alt="Twitch API" class="preview-pic"><br/>' +
+    '<h5>Projet en <i class="fab fa-html5"></i> et <i class="fab fa-css3-alt"></i> et <i class="fab fa-js-square"></i></h5>' +
     '<a href="https://codepen.io/donthatedontkill/full/vjrePv/" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
-    '<h5>Objectifs&nbsp:</h5>' +
-        '<ul>' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
+    '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
+        '<ul class="list">' +
             '<li>Javascript</li>' +
             '<li>APIs/JSON</li>' +
             '<li>Animation</li>' +
         '</ul>' +
-    '<strong><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
-    'Plus de projets à voir sur mon profil Codepen</strong>'
+    '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
+    'Plus de projets à voir sur mon profil Codepen</h5></div>'
 })
 $("#drawer4").hover(function(){
-    textDisplay.innerHTML = '4' //Add Hackathon project
+    textDisplay.innerHTML = '<div class="display"><h4>Hackathon</h4>' +
+    '<img src="./images/twitch.png" alt="Twitch API" class="preview-pic"><br/>' +
+    '<a href="https://codepen.io/donthatedontkill/full/vjrePv/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
+    '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
+        '<ul class="list">' +
+            '<li>Javascript</li>' +
+            '<li>APIs/JSON</li>' +
+            '<li>Animation</li>' +
+        '</ul>' +
+    '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
+    'Plus de projets à voir sur mon profil Codepen</h5></div>'
+     //Add Hackathon project
 })
 $("#drawer5").hover(function(){
-    textDisplay.innerHTML = '<h5>Astéroïdes</h5>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Astéroïdes</h4>' +
     '<img src="./images/asteroids.png" alt="Asteroids" class="preview-pic"><br/>' +
-    '<a href="http://www.codeskulptor.org/#user45_Kp9I2FikSN_9.py" target="_blank" rel="noopener">'
-    '<button type="button" class="btn normal-button"  aria-label="Voir Astéroïdes"><i class="fas fa-eye"></i></button></a>' +
+    '<h5>Projet en Python <i class="fab fa-python"></i></h5>' +
+    '<a href="http://www.codeskulptor.org/#user45_Kp9I2FikSN_9.py" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir Astéroïdes"><i class="fas fa-eye"></i></button></a>' +
     "<h5>N'oubliez pas de cliquer " + '<i class="fas fa-play"></i><br/>' +
-    'Google Chrome Exigé</h5>'
+    'Google Chrome Exigé</h5></div>'
 })
 $("#drawer6").hover(function(){
-    textDisplay.innerHTML = '<h5>Pong</h5>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Pong</h4>' +
     '<img src="./images/pong.png" alt="Pong" class="preview-pic"><br/>' +
+    '<h5>Projet en Python <i class="fab fa-python"></i></h5>' +
     '<a href="http://www.codeskulptor.org/#user44_IZkCmVtC8l_3.py" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button"  aria-label="Voir Pong"><i class="fas fa-eye"></i></button></a>' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir Pong"><i class="fas fa-eye"></i></button></a>' +
     "<h5>N'oubliez pas de cliquer " + '<i class="fas fa-play"></i><br/>' +
-    'Google Chrome Exigé</h5>'
+    'Google Chrome Exigé</h5></div>'
 })
 $("#drawer7").hover(function(){
-    textDisplay.innerHTML = '<h5>Blackjack</h5>' +
-    '<img src="./images/blackjack.png" alt="Blackjack" class="preview-pic"><br/>'
-    '<a href="http://www.codeskulptor.org/#user44_Eep4ag07be_7.py" target="_blank" rel="noopener">'
-    '<button type="button" class="btn normal-button"  aria-label="Voir Blackjack"><i class="fas fa-eye"></i></button></a>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Blackjack</h4>' +
+    '<img src="./images/blackjack.png" alt="Blackjack" class="preview-pic"><br/>' +
+    '<h5>Projet en Python <i class="fab fa-python"></i></h5>' +
+    '<a href="http://www.codeskulptor.org/#user44_Eep4ag07be_7.py" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir Blackjack"><i class="fas fa-eye"></i></button></a>' +
     "<h5>N'oubliez pas de cliquer " + '<i class="fas fa-play"></i><br/>' +
-    'Google Chrome Exigé</h5>'
+    'Google Chrome Exigé</h5></div>'
 })
 };
 
@@ -123,6 +142,7 @@ mapHover();
 
 $(window).on("resize", mapHover);
 
+//Images may need to be preloaded??
 
 
 
