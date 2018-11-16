@@ -1,9 +1,5 @@
-.look2{
+#about{
     background-image: url("../backgrounds/background2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
 }
 
 #me{
