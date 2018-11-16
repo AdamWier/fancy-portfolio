@@ -74,10 +74,6 @@ h2{
     font-size: 60px;
   }
 
-h4{
-      text-decoration: underline;
-  }
-
   .look{
     padding-top: 10vh;
     background-attachment: fixed;
@@ -103,6 +99,18 @@ button:hover{
     align-items: center;
     justify-content: center;
   }
+
+  .list{
+      text-align: left;
+  }
+
+  .list-heading{
+    text-align: left;
+}
+
+.underline{
+    text-decoration: underline;
+}
 
 @keyframes fadeout{
     from {opacity: 1;}

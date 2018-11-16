@@ -11,6 +11,7 @@ Dark Gray #9B9A8F
 
 #projects{
     background-image: url("../backgrounds/background1.jpg");
+    font-family: 'Allerta Stencil'
 }
 
 .body1{
@@ -36,6 +37,7 @@ Dark Gray #9B9A8F
 
 #nav1{
     background-color: #161510;
+    font-family: 'Allerta Stencil'
 }
 
 #nav1 a:link{
@@ -47,10 +49,35 @@ Dark Gray #9B9A8F
 }
 
 .preview-pic{
-    height: 10vw;
+    width: 20vw;
+    margin-bottom: 10pt;
   }
 
 #text-display{
     background-color: #D1CABB;
     border-radius: 15px;
+    border: 5px double #343423;
 }
+
+.button1{
+    background-color: #343423;
+    color: #D1CABB;
+    height: 7vh;
+    width: 10vh;
+  }
+
+  #nav1 .fas{
+      color: #D1CABB;
+  }
+
+  .double-button{
+      margin: 1vh 1vw 1vh 1vw;
+  }
+
+  .display{
+      margin-top: 10pt;
+  }
+
+  .display p{
+      font-weight: bold;
+  }

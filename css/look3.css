@@ -10,10 +10,12 @@ Black: #211E1C
 
 #certificates{
     background-image: url("../backgrounds/background3b.jpg");
+    font-family: 'Old Standard TT'
 }
 
 #nav3{
     background-color: #A65449;
+    font-family: 'Old Standard TT'
 }
 
 #nav3 a:link{
