@@ -11,10 +11,6 @@ Dark Gray #9B9A8F
 
 #projects{
     background-image: url("../backgrounds/background1.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
 }
 
 .body1{
@@ -48,4 +44,13 @@ Dark Gray #9B9A8F
 
 #nav1 a:visited{
     color: #D1CABB;
+}
+
+.preview-pic{
+    height: 10vw;
+  }
+
+#text-display{
+    background-color: #D1CABB;
+    border-radius: 15px;
 }

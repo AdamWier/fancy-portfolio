@@ -69,3 +69,7 @@ Black: #211E1C
   .button3:hover{
     box-shadow:0 12px 16px 0 rgb(196,181,170), 0 17px 50px 0 rgb(18,3,0);
   }
+
+  .certificate{
+    padding: 0 20pt 20pt 20pt;
+  }

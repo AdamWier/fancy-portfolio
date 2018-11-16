@@ -34,10 +34,6 @@ html {
     width: 50vh;
 }
 
-section{
-    padding-top: 10vh;
-}
-
 .container-fluid{
     padding: 0px
 }
@@ -83,10 +79,11 @@ h4{
   }
 
   .look{
+    padding-top: 10vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150%;
+    padding-bottom: 50%;
 }
 
 button:hover{

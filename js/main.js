@@ -91,12 +91,25 @@ $("#drawer3").hover(function(){
     'Plus de projets à voir sur mon profil Codepen</strong>'
 })
 $("#drawer4").hover(function(){
-    textDisplay.innerHTML = '4' //Add Hackathon project
+    textDisplay.innerHTML = '<h5>Hackathon</h5>' +
+    '<img src="./images/twitch.png" alt="Twitch API" class="preview-pic"><br/>' +
+    '<a href="https://codepen.io/donthatedontkill/full/vjrePv/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
+    '<h5>Objectifs&nbsp:</h5>' +
+        '<ul>' +
+            '<li>Javascript</li>' +
+            '<li>APIs/JSON</li>' +
+            '<li>Animation</li>' +
+        '</ul>' +
+    '<strong><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
+    'Plus de projets à voir sur mon profil Codepen</strong>'
+     //Add Hackathon project
 })
 $("#drawer5").hover(function(){
     textDisplay.innerHTML = '<h5>Astéroïdes</h5>' +
     '<img src="./images/asteroids.png" alt="Asteroids" class="preview-pic"><br/>' +
-    '<a href="http://www.codeskulptor.org/#user45_Kp9I2FikSN_9.py" target="_blank" rel="noopener">'
+    '<a href="http://www.codeskulptor.org/#user45_Kp9I2FikSN_9.py" target="_blank" rel="noopener">' +
     '<button type="button" class="btn normal-button"  aria-label="Voir Astéroïdes"><i class="fas fa-eye"></i></button></a>' +
     "<h5>N'oubliez pas de cliquer " + '<i class="fas fa-play"></i><br/>' +
     'Google Chrome Exigé</h5>'
@@ -111,8 +124,8 @@ $("#drawer6").hover(function(){
 })
 $("#drawer7").hover(function(){
     textDisplay.innerHTML = '<h5>Blackjack</h5>' +
-    '<img src="./images/blackjack.png" alt="Blackjack" class="preview-pic"><br/>'
-    '<a href="http://www.codeskulptor.org/#user44_Eep4ag07be_7.py" target="_blank" rel="noopener">'
+    '<img src="./images/blackjack.png" alt="Blackjack" class="preview-pic"><br/>' +
+    '<a href="http://www.codeskulptor.org/#user44_Eep4ag07be_7.py" target="_blank" rel="noopener">' +
     '<button type="button" class="btn normal-button"  aria-label="Voir Blackjack"><i class="fas fa-eye"></i></button></a>' +
     "<h5>N'oubliez pas de cliquer " + '<i class="fas fa-play"></i><br/>' +
     'Google Chrome Exigé</h5>'
