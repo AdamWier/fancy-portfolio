@@ -35,9 +35,28 @@ section{
     padding-top: 10vh;
 }
 
-/*.container-fluid{
-    padding-left: 0px
-}*/
+.container-fluid{
+    padding: 0px
+}
+
+/*Genreal navbar styling */
+.navigation{
+    overflow:hidden;
+    z-index:1;
+    font-size: calc(3pt + 2.5vh);
+  }
+  
+  .navigation li a{
+    margin: calc(2vw);
+    }
+  
+  .navigation a:link{
+    text-decoration:none;
+    }
+    
+  .navigation a:visited{
+    text-decoration:none;
+    } 
 
 @keyframes fadeout{
     from {opacity: 1;}

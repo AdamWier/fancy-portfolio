@@ -37,3 +37,15 @@ Dark Gray #9B9A8F
     display: block;
     border: 5px double #D1CABB;
 }
+
+#nav1{
+    background-color: #161510;
+}
+
+#nav1 a:link{
+    color: #D1CABB;
+}
+
+#nav1 a:visited{
+    color: #D1CABB;
+}
