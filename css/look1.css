@@ -35,6 +35,23 @@ Dark Gray #9B9A8F
     border: 5px double #D1CABB;
 }
 
+.overlay{
+    background-image: repeating-linear-gradient(
+        45deg,
+        #606dbc,
+        #606dbc 10px,
+        #465298 10px,
+        #465298 20px
+      );
+    position: absolute;
+    height: 7vh;
+    width: 88%;
+    top: 2%;
+    bottom: 0;
+    left: 14%;
+    right: 0;
+}
+
 #nav1{
     background-color: #161510;
     font-family: 'Allerta Stencil'
