@@ -143,7 +143,6 @@ mapHover();
 $(window).on("resize", mapHover);
 
 overlay = (coords) => {
-    console.log(coords);
     var x1 = parseInt(coords[0]);
     var y1 = parseInt(coords[1]);
     var x2 = parseInt(coords[2]);
@@ -152,7 +151,6 @@ overlay = (coords) => {
     var width = (x2 - x1) * .8;
     var top = y1 + ((y2 - y1) * .1);
     var left = x1 + ((x2 - x1) * .1);
-    console.log(height);
     $("#overlay").css({"top": top, "left": left, "height" : height + "px", "width": width + "px"})
 }
 

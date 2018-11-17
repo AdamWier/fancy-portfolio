@@ -9,7 +9,7 @@ Black #161510
 Dark Gray #9B9A8F
 */
 
-#projects{
+#look1{
     background-image: url("../backgrounds/background1.jpg");
     font-family: 'Allerta Stencil'
 }
@@ -43,12 +43,13 @@ Dark Gray #9B9A8F
 #overlay{
     background-image: repeating-linear-gradient(
         45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
+        black,
+        transparent 10px,
+        black 10px,
+        transparent 20px
       );
     position: absolute;
+    opacity: 0.5;
 }
 
 #nav1{
