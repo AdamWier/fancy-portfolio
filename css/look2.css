@@ -1,10 +1,38 @@
+/* Color Palette for look2:
+---------------
+Slate Blue #3B4CCB
+Dark Slate Gray #19212A
+Light Steel Blue #D1D4DA
+Light Slate Gray #88A0B6
+Gray #959190 */
+
 #look2{
-    background-image: url("../backgrounds/background2.jpg");
+    background-image: url("../backgrounds/background2h.jpg");
     padding-top: 0;
+    font-family: 'Dosis';
 }
 
 #me{
     border-radius: 100%;
     height: 10vw;
     border: solid;
+}
+
+#nav2{
+    background-color: #3B4CCB;
+    font-family: 'Dosis';
+}
+
+#nav2 a:link{
+    color: #D1D4DA;
+}
+
+#nav2 a:visited{
+    color: #D1D4DA;
+}
+
+#element2{
+    background-color: #211E1C;
+    color: #909C9C;
+    border: groove #7F6F64;
 }
