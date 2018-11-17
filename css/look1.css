@@ -55,8 +55,6 @@ Dark Gray #9B9A8F
 #nav1{
     background-color: #161510;
     font-family: 'Allerta Stencil';
-    font-size: 16pt;
-    height: 43pt;
 }
 
 #nav1 a:link{
@@ -99,4 +97,12 @@ Dark Gray #9B9A8F
 
   .display p{
       font-weight: bold;
+  }
+
+  @media screen and (min-width: 770px){
+      #nav1{
+        font-size: 16pt;
+        height: 43pt;
+      }
+
   }
