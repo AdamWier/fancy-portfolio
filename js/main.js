@@ -142,17 +142,27 @@ mapHover();
 
 $(window).on("resize", mapHover);
 
+overlay = (coords) => {
+    console.log(coords);
+    var x1 = parseInt(coords[0]);
+    var y1 = parseInt(coords[1]);
+    var x2 = parseInt(coords[2]);
+    var y2 = parseInt(coords[3]);
+    var height = (y2 - y1) * .8;
+    var width = (x2 - x1) * .8;
+    var top = y1 + ((y2 - y1) * .1);
+    var left = x1 + ((x2 - x1) * .1);
+    console.log(height);
+    $("#overlay").css({"top": top, "left": left, "height" : height + "px", "width": width + "px"})
+}
+
 $("area").hover(function(){
-    console.log("fired");
-    var x1 = $(this).attr("coords").split(",")[0];
-    var y1 = $(this).attr("coords").split(",")[1];
-    var x2 = $(this).attr("coords").split(",")[2];
-    var y2 = $(this).attr("coords").split(",")[3];
-    var height = y2 - y1;
-    var width = x2 - x1
-    console.log(width);
-    $("#overlay").css({"top": y1, "left": x1, "height" : height + "px", "width": width + "px"})
-})
+    let coords = ($(this).attr("coords").split(","));
+overlay(coords)})
+
+$(window).on("resize", function(){$("area").hover(function(){
+    let coords = ($(this).attr("coords").split(","));
+overlay(coords)})});
 
 //Images may need to be preloaded??
 
