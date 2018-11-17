@@ -142,6 +142,18 @@ mapHover();
 
 $(window).on("resize", mapHover);
 
+$("area").hover(function(){
+    console.log("fired");
+    var x1 = $(this).attr("coords").split(",")[0];
+    var y1 = $(this).attr("coords").split(",")[1];
+    var x2 = $(this).attr("coords").split(",")[2];
+    var y2 = $(this).attr("coords").split(",")[3];
+    var height = y2 - y1;
+    var width = x2 - x1
+    console.log(width);
+    $("#overlay").css({"top": y1, "left": x1, "height" : height + "px", "width": width + "px"})
+})
+
 //Images may need to be preloaded??
 
 

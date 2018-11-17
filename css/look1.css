@@ -30,12 +30,17 @@ Dark Gray #9B9A8F
 #cabinet{
     max-height: 75vh;
     max-width: 40vw;
-    margin-left: 10%;
     display: block;
     border: 5px double #D1CABB;
 }
 
-.overlay{
+#cabinet-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#overlay{
     background-image: repeating-linear-gradient(
         45deg,
         #606dbc,
@@ -44,17 +49,13 @@ Dark Gray #9B9A8F
         #465298 20px
       );
     position: absolute;
-    height: 7vh;
-    width: 88%;
-    top: 2%;
-    bottom: 0;
-    left: 14%;
-    right: 0;
 }
 
 #nav1{
     background-color: #161510;
-    font-family: 'Allerta Stencil'
+    font-family: 'Allerta Stencil';
+    font-size: 16pt;
+    height: 40pt;
 }
 
 #nav1 a:link{
