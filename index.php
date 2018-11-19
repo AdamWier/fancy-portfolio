@@ -1,4 +1,79 @@
-<?php 
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/safe-art.css">
+  <link rel="stylesheet" href="css/look1.css">
+  <link rel="stylesheet" href="css/look2.css">
+  <link rel="stylesheet" href="css/look3.css">
+  <link rel="stylesheet" href="css/look4.css">
+
+  <title>Adam Wier, Développeur Web</title>
+</head>
+
+<body class="body1">
+        <!-- Loading screen -->
+  <div id="loading">
+    <div class="row">
+      <div class="col-12">
+        <div id="safe-box">
+          <div class="safe">
+            <div class="door">
+              <div class="upper-hinge"></div>
+              <div class="lower-hinge"></div>
+              <div class="wheel"></div>
+              <div class="handle"></div>
+            </div>
+          </div>
+          <div class="left-leg"></div>
+          <div class="right-leg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="loading-text">
+      <div class="col-12">
+        En train d'aménager...
+      </div>
+    </div>
+    <div id="preload1"></div>
+    <div id="preload2"></div>
+    <div id="preload3"></div>
+    <div id="preload4"></div>
+    <div id="preload5"></div>
+    <div id="preload6"></div>
+    <div id="preload7"></div>
+  </div>
+  <div class="container-fluid">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    
+  <?php 
 require("./config/db.php");
 
 $msg = "";
@@ -49,79 +124,7 @@ if (filter_has_var(INPUT_POST, "submit")){
 
 ?>
 
-<!doctype html>
-<html lang="fr">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-
-  <!-- Custom style -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/safe-art.css">
-  <link rel="stylesheet" href="css/look1.css">
-  <link rel="stylesheet" href="css/look2.css">
-  <link rel="stylesheet" href="css/look3.css">
-  <link rel="stylesheet" href="css/look4.css">
-
-  <title>Adam Wier, Développeur Web</title>
-</head>
-
-<body class="body1">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-        <!-- Loading screen -->
-  <!-- <div id="loading">
-    <div class="row">
-      <div class="col-12">
-        <div id="safe-box">
-          <div class="safe">
-            <div class="door">
-              <div class="upper-hinge"></div>
-              <div class="lower-hinge"></div>
-              <div class="wheel"></div>
-              <div class="handle"></div>
-            </div>
-          </div>
-          <div class="left-leg"></div>
-          <div class="right-leg"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row" id="loading-text">
-      <div class="col-12">
-        En train d'aménager...
-      </div>
-    </div>
-    <div id="preload1"></div>
-    <div id="preload2"></div>
-    <div id="preload3"></div>
-    <div id="preload4"></div>
-    <div id="preload5"></div>
-    <div id="preload6"></div>
-    <div id="preload7"></div>
-  </div> -->
-  <div class="container-fluid">
     <!-- Header/navbar-->
     <header>
       <nav class="navbar navbar-expand-md fixed-top navigation" data-toggle="affix" id="nav2">
