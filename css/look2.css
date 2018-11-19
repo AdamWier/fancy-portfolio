@@ -32,7 +32,13 @@ Gray #959190 */
 }
 
 #element2{
-    background-color: #211E1C;
-    color: #909C9C;
+    background-color: #D1D4DA;
+    color: #19212A;
     border: groove #7F6F64;
+    padding: 10pt;
+}
+
+.button2{
+    background-color: #3B4CCB;
+    color: #D1D4DA;
 }

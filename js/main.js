@@ -1,10 +1,10 @@
 $(window).ready(function(){
     setTimeout(function(){
     $("#loading").addClass("fadeout");
-    }, 8000);
+    }, 4000);
     setTimeout(function(){
         $("#loading").addClass("loaded");
-    }, 10000);
+    }, 5000);
 
 //Function to handle resizing image maps
 mapManagement = () => {var cabinetImg = document.getElementById('cabinet');

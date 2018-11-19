@@ -116,6 +116,17 @@ button:hover{
     padding: 30pt;
 }
 
+#preload1 { background: url(./images/asteroids.png) no-repeat -9999px -9999px; }
+#preload2 { background: url(./images/blackjack.png) no-repeat -9999px -9999px; }
+#preload3 { background: url(./images/pomodoro.png) no-repeat -9999px -9999px; }
+#preload4 { background: url(./images/pong.png) no-repeat -9999px -9999px; }
+#preload5 { background: url(./images/twitch.png) no-repeat -9999px -9999px; }
+#preload6 { background: url(./images/simple-ricks.png) no-repeat -9999px -9999px; }
+#preload7 { background: url(./images/simple-ricks.png) no-repeat -9999px -9999px; }
+
+
+
+
 @keyframes fadeout{
     from {opacity: 1;}
     to {opacity: 0;}
