@@ -1,0 +1,75 @@
+.head{
+    background-color: #f1c27d;
+    height: 25%;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    border-radius: 100%;
+}
+
+.left-ear{
+    background-color: #f1c27d;
+    height: 7%;
+    width: 5%;
+    border-radius: 100%;
+    position: absolute;
+    top: 8%;
+    left: 38.5%;
+}
+
+.right-ear{
+    background-color: #f1c27d;
+    height: 7%;
+    width: 5%;
+    border-radius: 100%;
+    position: absolute;
+    top: 8%;
+    left: 56.5%;
+}
+
+.left-eye{
+    background-color: #3c3c3c;
+    height: 10%;
+    width: 10%;
+    border-radius: 100%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.right-eye{
+    background-color: #3c3c3c;
+    height: 10%;
+    width: 10%;
+    border-radius: 100%;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+}
+
+.nose{
+    background-color: #eaa134;
+    height: 18%;
+    width: 10%;
+    border-radius: 35%;
+    position: absolute;
+    top: 39%;
+    left: 45%;
+}
+
+.upper-lip{
+    background-color: #f1c27d;
+    width: 100%;
+    height: 45%;
+
+}
+
+.mouth{
+    background-color: #e35d6a;
+    height: 15%;
+    width: 40%;
+    border-radius: 40%;
+    position: absolute;
+    top: 65%;
+    left: 30.5%;
+}

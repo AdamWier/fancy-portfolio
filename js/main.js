@@ -1,10 +1,10 @@
 $(window).ready(function(){
     setTimeout(function(){
     $("#loading").addClass("fadeout");
-    }, 8000);
+    }, 4000);
     setTimeout(function(){
         $("#loading").addClass("loaded");
-    }, 10000);
+    }, 5000);
 
 //Function to handle resizing image maps
 mapManagement = () => {var cabinetImg = document.getElementById('cabinet');
@@ -141,6 +141,26 @@ $("#drawer7").hover(function(){
 mapHover();
 
 $(window).on("resize", mapHover);
+
+overlay = (coords) => {
+    var x1 = parseInt(coords[0]);
+    var y1 = parseInt(coords[1]);
+    var x2 = parseInt(coords[2]);
+    var y2 = parseInt(coords[3]);
+    var height = (y2 - y1) * .8;
+    var width = (x2 - x1) * .8;
+    var top = y1 + ((y2 - y1) * .1);
+    var left = x1 + ((x2 - x1) * .1);
+    $("#overlay").css({"top": top, "left": left, "height" : height + "px", "width": width + "px"})
+}
+
+$("area").hover(function(){
+    let coords = ($(this).attr("coords").split(","));
+overlay(coords)})
+
+$(window).on("resize", function(){$("area").hover(function(){
+    let coords = ($(this).attr("coords").split(","));
+overlay(coords)})});
 
 //Images may need to be preloaded??
 
