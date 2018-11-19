@@ -6,9 +6,9 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item"><a href="#about">Le créateur</a></li>
-              <li class="nav-item"><a href="#certificates">Les certificats</a></li>
+              <li class="nav-item"><a href="#certificates">Les brevets</a></li>
               <li class="nav-item"><a href="#projects">Les curiosités</a></li>
-              <li class="nav-item"><a href="#contact">Prendre contact</a></li>
+              <li class="nav-item"><a href="#contact">La correspondence</a></li>
             </ul>
           </div>
         </div>

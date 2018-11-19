@@ -99,18 +99,16 @@
               <li>Accessibilité</li>
               <li>Flexbox</li>
               <li>CSS Grille</li>
+              <li>Bootstrap</li>
+              <li>jQuery</li>
+              <li>React</li>
             </ul>
             <h4>Notions de&nbsp:</h4>
             <ul>
-              <li>Bootstrap</li>
-              <li>jQuery</li>
+              <li>PHP</li>
+              <li>MySQL</li>
               <li>SASS</li>
-              <li>React/Redux</li>
-            </ul>
-            <h4>Logiciels&nbsp:</h4>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>Git/GitHub</li>
+              <li>Redux</li>
             </ul>
           </div>
           <div class="col-md-6 col-12">
@@ -145,6 +143,16 @@
               <button type="button" class="btn big-button button2">Télécharger CV (DOCX)</button>
             </a>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-3">            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-linkedin"></i>
+            LinkedIn</button></a></div>
+          <div class="col-3">            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-free-code-camp"></i></i>
+            FreeCodeCamp</button></a></div>
+          <div class="col-3">            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-github-square"></i>
+            GitHub</button></a></div>
+            <div class="col-3">            <a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-codepen"></i>
+              CodePen</button></a></div>
         </div>
       </div>
     </section>

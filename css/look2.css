@@ -41,4 +41,6 @@ Gray #959190 */
 .button2{
     background-color: #3B4CCB;
     color: #D1D4DA;
+    width: 160px;
+    margin: 5pt;
 }
