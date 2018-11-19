@@ -2,7 +2,7 @@
 
 $msg = "";
 
-if (filter_has_var(INPUT_POST, "submit")){
+if (filter_has_var($_POST, "submit")){
   $name = htmlspecialchars($_POST["name"]);
   $email = htmlspecialchars($_POST["email"]);
   $message = htmlentities($_POST["message"]);
@@ -33,7 +33,8 @@ if (filter_has_var(INPUT_POST, "submit")){
   }
 }
 
+print_r($_POST);
 echo $msg;
-echo '<a href="../index.php">Back to the page</a>';
+echo '<br><a href="../index.php">Back to the page</a>';
 
 ?>

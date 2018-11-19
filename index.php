@@ -1,3 +1,40 @@
+<?php 
+
+$msg = "";
+
+if (filter_has_var(INPUT_POST, "submit")){
+  $name = htmlspecialchars($_POST["name"]);
+  $email = htmlspecialchars($_POST["email"]);
+  $message = htmlentities($_POST["message"]);
+
+  if (!empty($name) && !empty($email) && !empty($message)){
+    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)){
+      $msg = "Merci de revérifier votre email";
+    }
+    else{
+      $toEmail = "wier.adam@gmail.com";
+      $subject = "Contact Form";
+      $body = "<h2>Contact form submitted</h2>
+      <h4>Name</h4><p>$name</p>
+      <h4>Email</h4><p>$email</p>
+      <h4>Message</h4><p>$message</p>";
+
+      $header = "MIME-Version: 1.0"."\r\n";
+      $header .= "Content-Type:text/html;charset=UTF-8"."\r\n";
+      $header .= "From: ".$name."<".$email.">"."\r\n";
+      
+      if (mail($toEmail, $subject, $body, $header)){
+        $msg = "Votre email a été enovyé sans problème!";
+      }
+    }
+  }
+  else{
+    $msg = "Merci de remplir tout le formulaire";
+  }
+}
+
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -345,7 +382,7 @@
         </div>
         <div class="row form-group no-break">
           <div class="col-12 text-center">
-              <form method="post" action="./inc/form-handler.php">
+              <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
               <label for="name">Votre nom&nbsp: </label><br/>
               <input type="text" class="form-control" required name="name" placeholder="Votre nom ici" value="<?php echo isset($_POST["name"]) ? $name : ""; ?>">
               <label for="email">Votre adresse mail&nbsp: </label>
@@ -355,6 +392,9 @@
             <button type="submit" class="btn big-button button4" name="submit" id="submit"><i class="fas fa-at"></i>
                 Email</button>
               </form>
+              <?php if ($msg != ""): ?>
+              <span><?php echo $msg; ?></span>
+              <?php endif; ?>
               </div>
         </div>
       </div>
