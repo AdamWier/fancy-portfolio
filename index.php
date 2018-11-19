@@ -1,4 +1,5 @@
 <?php 
+require("./config/db.php");
 
 $msg = "";
 
@@ -30,6 +31,19 @@ if (filter_has_var(INPUT_POST, "submit")){
   }
   else{
     $msg = "Merci de remplir tout le formulaire";
+  }
+
+  $sqlName = mysqli_real_escape_string($conn, $_POST["name"]);
+  $sqlEmail = mysqli_real_escape_string($conn, $_POST["email"]);
+  $sqlMessage = mysqli_real_escape_string($conn, $_POST["message"]);
+
+  $query = "INSERT INTO submissions(name, email, message) VALUES('$sqlName', '$sqlEmail', '$sqlMessage')";
+
+  if(mysqli_query($conn, $query)){
+      header("Location: ".ROOT_URL."");
+  }
+  else{
+      echo "ERROR: ".mysqli_error($conn);
   }
 }
 
