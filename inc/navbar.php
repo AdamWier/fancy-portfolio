@@ -8,7 +8,7 @@
               <li class="nav-item"><a href="#about">Le créateur</a></li>
               <li class="nav-item"><a href="#certificates">Les brevets</a></li>
               <li class="nav-item"><a href="#projects">Les curiosités</a></li>
-              <li class="nav-item"><a href="#contact">La correspondence</a></li>
+              <li class="nav-item"><a href="#contact">Communiqués</a></li>
             </ul>
           </div>
         </div>
