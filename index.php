@@ -11,7 +11,7 @@
     crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -39,8 +39,8 @@
   <script src="js/main.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <div id="loading">
-    <!-- Loading screen -->
+        <!-- Loading screen -->
+  <!-- <div id="loading">
     <div class="row">
       <div class="col-12">
         <div id="safe-box">
@@ -69,7 +69,7 @@
     <div id="preload5"></div>
     <div id="preload6"></div>
     <div id="preload7"></div>
-  </div>
+  </div> -->
   <div class="container-fluid">
     <!-- Header/navbar-->
     <header>
@@ -315,23 +315,23 @@
     </nav>
     <section class="look" id="look4">
         <a class="nav-link" id="contact"></a>
-        <div class="element">
+        <div class="element" id="element4">
           <div class="row">
       <div class="col-md-4 col-12">
-        <h2>Contact</h2>
+        <h2 class="h2-4">Contact</h2>
       </div>
       <div class="col-md-8 col-12">
         <div class="row text-center">
           <div class="col-lg-4">
-            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button"><i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-linkedin"></i>
                 LinkedIn</button></a>
           </div>
           <div class="col-lg-4">
-            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button"><i class="fab fa-free-code-camp"></i></i>
+            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-free-code-camp"></i></i>
                 FreeCodeCamp</button></a>
           </div>
           <div class="col-lg-4">
-            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button"><i class="fab fa-github-square"></i>
+            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-github-square"></i>
                 GitHub</button></a>
           </div>
         </div>
@@ -344,7 +344,7 @@
               <input type="email" class="form-control" required name="email" placeholder="Votre adresse mail ici" value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
               <label for="message">Votre message&nbsp: </label>
               <textarea name="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>            
-            <button type="submit" class="btn big-button" name="submit"><i class="fas fa-at"></i>
+            <button type="submit" class="btn big-button button4" name="submit" id="submit"><i class="fas fa-at"></i>
                 Email</button>
               </form>
               </div>

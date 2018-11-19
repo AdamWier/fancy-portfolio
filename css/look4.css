@@ -1,0 +1,48 @@
+/*Color scheme:
+---------------------
+Crimson: #C31B0D
+Maroon: #341106
+Burly Wood: #DD9A7A
+Sienna: #853A27
+Saddle Brown: #5C2010
+*/
+
+
+#look4{
+    background-image: url("../backgrounds/background4.jpg");
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#nav4{
+    background-color: #341106;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#nav4 a:link{
+    color: #C31B0D;
+}
+
+#nav4 a:visited{
+    color: #C31B0D;
+}
+
+#element4{
+      background-color: #853A27;
+      color: #DD9A7A;
+      border: groove #5C2010;
+      padding: 20pt;
+  }
+
+  .h2-4{
+      color: #C4B5AA;
+  }
+
+  .button4{
+    background-color: #341106;
+    color: #C4B5AA;
+    width: 160px;
+  }
+
+  #submit{
+    margin-top: 10pt;
+  }
