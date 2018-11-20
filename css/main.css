@@ -36,6 +36,7 @@ html {
 
 .container-fluid{
     padding: 0px;
+    width:100%;
 }
 
 /*Genreal navbar styling */

@@ -28,7 +28,7 @@
   <title>Adam Wier, Développeur Web</title>
 </head>
 
-<body class="body1">
+<body>
         <!-- Loading screen -->
   <!-- <div id="loading">
     <div class="row">
@@ -60,7 +60,6 @@
     <div id="preload6"></div>
     <div id="preload7"></div>
   </div> -->
-  <div class="container-fluid">
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -126,6 +125,7 @@ if (filter_has_var(INPUT_POST, "submit")){
 
 
     <!-- Header/navbar-->
+    <div class="container-fluid">
     <header>
       <nav class="navbar navbar-expand-sm fixed-top navigation" data-toggle="affix" id="nav2">
         <?php include("inc/navbar.php") ?>
