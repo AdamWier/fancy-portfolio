@@ -30,7 +30,7 @@
 
 <body>
         <!-- Loading screen -->
-  <!-- <div id="loading">
+  <div id="loading">
     <div class="row">
       <div class="col-12">
         <div id="safe-box">
@@ -59,7 +59,7 @@
     <div id="preload5"></div>
     <div id="preload6"></div>
     <div id="preload7"></div>
-  </div> -->
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
