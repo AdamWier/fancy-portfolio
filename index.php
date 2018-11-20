@@ -30,7 +30,7 @@
 
 <body class="body1">
         <!-- Loading screen -->
-  <div id="loading">
+  <!-- <div id="loading">
     <div class="row">
       <div class="col-12">
         <div id="safe-box">
@@ -59,7 +59,7 @@
     <div id="preload5"></div>
     <div id="preload6"></div>
     <div id="preload7"></div>
-  </div>
+  </div> -->
   <div class="container-fluid">
 
   <!-- Optional JavaScript -->
@@ -127,7 +127,7 @@ if (filter_has_var(INPUT_POST, "submit")){
 
     <!-- Header/navbar-->
     <header>
-      <nav class="navbar navbar-expand-md fixed-top navigation" data-toggle="affix" id="nav2">
+      <nav class="navbar navbar-expand-sm fixed-top navigation" data-toggle="affix" id="nav2">
         <?php include("inc/navbar.php") ?>
       </nav>
     </header>
@@ -187,30 +187,30 @@ if (filter_has_var(INPUT_POST, "submit")){
           </div>
         </div>
         <div class="row">
-          <div class="col-6 text-center">
-            <a href="./cv/cv-pdf.pdf"><br />
-              <button type="button" class="btn big-button button2">Télécharger CV (PDF)</button>
+          <div class="col-md-6 col-12 text-center">
+            <a href="./cv/cv-pdf.pdf">
+              <button type="button" class="btn bormal-button button2">Télécharger CV (PDF)</button>
             </a>
           </div>
-          <div class="col-6 text-center">
-            <a href="./cv/cv-word.docx"><br />
-              <button type="button" class="btn big-button button2">Télécharger CV (DOCX)</button>
+          <div class="col-md-6 col-12 text-center">
+            <a href="./cv/cv-word.docx">
+              <button type="button" class="btn normal-button button2">Télécharger CV (DOCX)</button>
             </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-3">            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-linkedin"></i>
+          <div class="col-md-3 text-center">            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-linkedin"></i>
             LinkedIn</button></a></div>
-          <div class="col-3">            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-free-code-camp"></i></i>
+          <div class="col-md-3 text-center">            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-free-code-camp"></i></i>
             FreeCodeCamp</button></a></div>
-          <div class="col-3">            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-github-square"></i>
+          <div class="col-md-3 text-center">            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-github-square"></i>
             GitHub</button></a></div>
-            <div class="col-3">            <a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-codepen"></i>
+            <div class="col-md-3 text-center">            <a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-codepen"></i>
               CodePen</button></a></div>
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-md sticky-top navigation" data-toggle="affix" id="nav3">
+    <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav3">
       <?php include("inc/navbar.php") ?>
     </nav>
     <section class="look" id="look3">
@@ -341,7 +341,7 @@ if (filter_has_var(INPUT_POST, "submit")){
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-md sticky-top navigation" data-toggle="affix" id="nav1">
+    <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav1">
       <?php include("inc/navbar.php") ?>
     </nav>
     <section class="look" id="look1">
@@ -372,7 +372,7 @@ if (filter_has_var(INPUT_POST, "submit")){
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-md sticky-top navigation" data-toggle="affix" id="nav4">
+    <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav4">
         <?php include("inc/navbar.php") ?>
     </nav>
     <section class="look" id="look4">
@@ -406,8 +406,7 @@ if (filter_has_var(INPUT_POST, "submit")){
               <input type="email" class="form-control" required name="email" placeholder="Votre adresse mail ici" value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
               <label for="message">Votre message&nbsp: </label>
               <textarea name="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>            
-            <button type="submit" class="btn big-button button4" name="submit" id="submit"><i class="fas fa-at"></i>
-                Email</button>
+            <button type="submit" class="btn big-button button4" name="submit" id="submit">Envoyer <i class="fas fa-at"></i></button>
               </form>
               <?php if ($msg != ""): ?>
               <span><?php echo $msg; ?></span>

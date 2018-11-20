@@ -14,7 +14,7 @@ Gray #959190 */
 
 #me{
     border-radius: 100%;
-    height: 10vw;
+    width: 50%;
     border: solid;
 }
 
@@ -31,6 +31,10 @@ Gray #959190 */
     color: #D1D4DA;
 }
 
+#nav2 .fas{
+    color: #D1D4DA;
+}
+
 #element2{
     background-color: #D1D4DA;
     color: #19212A;
@@ -43,4 +47,10 @@ Gray #959190 */
     color: #D1D4DA;
     width: 160px;
     margin: 5pt;
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+    display: block !important;
+}
 }
