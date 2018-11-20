@@ -348,7 +348,7 @@ if (filter_has_var(INPUT_POST, "submit")){
       <a class="nav-link" id="projects"></a>
       <div class="element">
         <div class="row">
-          <div class="col text-center mx-5">
+          <div class="col text-center m-5 h-75 w-50">
             <div id="cabinet-container">
               <img src="images/cabinet.jpg" id="cabinet" alt="click drawers for information" usemap="cabinetmap">
               <div id="overlay"></div>
@@ -365,7 +365,7 @@ if (filter_has_var(INPUT_POST, "submit")){
               </map>
             </div>
           </div>
-          <div class="col mx-5 h-75 w-50 text-center" id="text-display">
+          <div class="col m-5 h-75 w-50 text-center" id="text-display">
             Choissez un tiroir, n'importe lequel... <br />
             N'ayez pas peur.
           </div>
