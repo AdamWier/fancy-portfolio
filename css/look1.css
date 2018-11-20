@@ -14,10 +14,6 @@ Dark Gray #9B9A8F
     font-family: 'Allerta Stencil'
 }
 
-.body1{
-    background-color: #343423;
-}
-
 .h2-1{
     color: #D1CABB;
     font-family: 'Allerta Stencil', sans-serif;
@@ -29,7 +25,6 @@ Dark Gray #9B9A8F
 
 #cabinet{
     max-height: 75vh;
-    max-width: 40vw;
     display: block;
     border: 5px double #D1CABB;
 }
@@ -106,3 +101,10 @@ Dark Gray #9B9A8F
       }
 
   }
+
+  @media screen and (max-width: 770px){
+    #cabinet{
+        max-height: 50vh;
+    }
+
+}

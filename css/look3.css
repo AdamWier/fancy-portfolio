@@ -26,6 +26,10 @@ Black: #211E1C
     color: #C4B5AA;
 }
 
+#nav3 .fas{
+  color: #C4B5AA;
+}
+
 .carousel-indicators li{
     background-color: #C4B5AA;
   }
@@ -75,3 +79,9 @@ Black: #211E1C
   .certificate{
     padding: 0 20pt 20pt 20pt;
   }
+
+  @media screen and (max-width: 768px){
+    .carousel-indicators{
+       position: relative;
+    }
+}

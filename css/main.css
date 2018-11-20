@@ -35,7 +35,8 @@ html {
 }
 
 .container-fluid{
-    padding: 0px
+    padding: 0px;
+    width:100%;
 }
 
 /*Genreal navbar styling */
@@ -130,4 +131,10 @@ button:hover{
 @keyframes fadeout{
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+    display: block !important;
+}
 }

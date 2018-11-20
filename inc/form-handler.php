@@ -35,6 +35,6 @@ if (filter_has_var($_POST, "submit")){
 
 print_r($_POST);
 echo $msg;
-echo '<br><a href="../index.php">Back to the page</a>';
+echo '<br><a href="../index.php">Retourner</a>';
 
 ?>

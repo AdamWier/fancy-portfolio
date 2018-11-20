@@ -94,15 +94,20 @@ $("#drawer3").hover(function(){
     'Plus de projets à voir sur mon profil Codepen</h5></div>'
 })
 $("#drawer4").hover(function(){
-    textDisplay.innerHTML = '<div class="display"><h4>Hackathon</h4>' +
-    '<img src="./images/twitch.png" alt="Twitch API" class="preview-pic"><br/>' +
-    '<a href="https://codepen.io/donthatedontkill/full/vjrePv/" target="_blank" rel="noopener">' +
-    '<button type="button" class="btn normal-button button1"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
+    textDisplay.innerHTML = '<div class="display"><h4>Pic Scavenger</h4>' +
+    '<img src="./images/picscavenger.jpg" alt="Pic Scavenger" class="preview-pic"><br/>' +
+    '<h5>Project en <i class="fab fa-react"></i></h5>' +
+    '<a href="https://github.com/teamjake2018/jake" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir le code de Pic Scavenger"><i class="fab fa-github"></i></button></a>' +
+    '<a href="https://serene-noyce-9165d0.netlify.com/" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1 mx-1"  aria-label="Voir la page de Pic Scavenger"><i class="fas fa-eye"></i></button></a>' +
+    '<a href="https://www.youtube.com/watch?v=fl0Ezf7iX10" target="_blank" rel="noopener">' +
+    '<button type="button" class="btn normal-button button1"  aria-label="Voir la présentation de Pic Scavenger"><i class="fab fa-youtube"></i></button></a>' +
     '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
         '<ul class="list">' +
-            '<li>Javascript</li>' +
-            '<li>APIs/JSON</li>' +
-            '<li>Animation</li>' +
+            "<li>Reconaissance d'image</li>" +
+            '<li>Travail en équipe</li>' +
+            '<li>React</li>' +
         '</ul>' +
     '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
     '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
