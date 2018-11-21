@@ -1,52 +1,3 @@
-<?php 
-require("./config/db.php");
-
-$msg = "";
-
-if (filter_has_var(INPUT_POST, "submit")) {
-  $name = htmlspecialchars($_POST["name"]);
-  $email = htmlspecialchars($_POST["email"]);
-  $message = htmlentities($_POST["message"]);
-
-  if (!empty($name) && !empty($email) && !empty($message)) {
-    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)) {
-      $msg = "Merci de revérifier votre email";
-    } else {
-      $toEmail = "wier.adam@gmail.com";
-      $subject = "Contact Form";
-      $body = "<h2>Contact form submitted</h2>
-      <h4>Name</h4><p>$name</p>
-      <h4>Email</h4><p>$email</p>
-      <h4>Message</h4><p>$message</p>";
-
-      $header = "MIME-Version: 1.0" . "\r\n";
-      $header .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
-      $header .= "From: " . $name . "<" . $email . ">" . "\r\n";
-
-      if (mail($toEmail, $subject, $body, $header)) {
-        $msg = "Votre email a été enovyé sans problème!";
-        
-        $sqlName = mysqli_real_escape_string($conn, $_POST["name"]);
-        $sqlEmail = mysqli_real_escape_string($conn, $_POST["email"]);
-        $sqlMessage = mysqli_real_escape_string($conn, $_POST["message"]);
-
-        $query = "INSERT INTO submissions(name, email, message) VALUES('$sqlName', '$sqlEmail', '$sqlMessage')";
-
-        if (mysqli_query($conn, $query)) {
-          header("Location: " . ROOT_URL . "");
-        } else {
-          echo "ERROR: " . mysqli_error($conn);
-        }
-      }
-    }
-  } else {
-    $msg = "Merci de remplir tout le formulaire";
-  }
-
-
-}
-?>
-
 <!doctype html>
 <html lang="fr">
 
@@ -82,7 +33,7 @@ if (filter_has_var(INPUT_POST, "submit")) {
 
 <body>
   <!-- Loading screen -->
-  <!-- <div id="loading">
+  <div id="loading">
     <div class="row">
       <div class="col-12">
         <div id="safe-box">
@@ -104,6 +55,7 @@ if (filter_has_var(INPUT_POST, "submit")) {
         En train d'aménager...
       </div>
     </div>
+    <div id="preload8"></div>
     <div id="preload1"></div>
     <div id="preload2"></div>
     <div id="preload3"></div>
@@ -111,7 +63,51 @@ if (filter_has_var(INPUT_POST, "submit")) {
     <div id="preload5"></div>
     <div id="preload6"></div>
     <div id="preload7"></div>
-  </div> -->
+  </div>
+
+<!-- Form handler -->
+<?php 
+require("./config/db.php");
+
+$msg = "";
+
+if (filter_has_var(INPUT_POST, "submit")) {
+  $name = htmlspecialchars($_POST["name"]);
+  $email = htmlspecialchars($_POST["email"]);
+  $message = htmlentities($_POST["message"]);
+
+  if (!empty($name) && !empty($email) && !empty($message)) {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)) {
+      $msg = "Merci de revérifier votre email";
+    } else {
+      $toEmail = "wier.adam@gmail.com";
+      $subject = "Contact Form";
+      $body = "<h2>Contact form submitted</h2>
+      <h4>Name</h4><p>$name</p>
+      <h4>Email</h4><p>$email</p>
+      <h4>Message</h4><p>$message</p>";
+
+      $header = "MIME-Version: 1.0" . "\r\n";
+      $header .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+      $header .= "From: " . $name . "<" . $email . ">" . "\r\n";
+
+      if (mail($toEmail, $subject, $body, $header)) {
+        $msg = "Votre email a été enovyé sans problème!";
+        
+        $sqlName = mysqli_real_escape_string($conn, $_POST["name"]);
+        $sqlEmail = mysqli_real_escape_string($conn, $_POST["email"]);
+        $sqlMessage = mysqli_real_escape_string($conn, $_POST["message"]);
+
+        $query = "INSERT INTO submissions(name, email, message) VALUES('$sqlName', '$sqlEmail', '$sqlMessage')";
+
+        mysqli_query($conn, $query);
+      }
+    }
+  } else {
+    $msg = "Merci de remplir tout le formulaire";
+  }
+}
+?>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -438,11 +434,11 @@ if (filter_has_var(INPUT_POST, "submit")) {
               <div class="col-12 text-center">
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
                   <label for="name">Votre nom&nbsp: </label><br />
-                  <input type="text" class="form-control" required name="name" id="name" placeholder="Votre nom ici"
-                    value="<?php echo isset($_POST[" name"]) ? $name : ""; ?>">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Votre nom ici"
+                    value="<?php echo isset($_POST["name"]) ? $name : ""; ?>">
                   <label for="email">Votre adresse mail&nbsp: </label>
                   <input type="email" class="form-control" required name="email" id="email" placeholder="Votre adresse mail ici"
-                    value="<?php echo isset($_POST[" email"]) ? $email : ""; ?>">
+                    value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
                   <label for="message">Votre message&nbsp: </label>
                   <textarea name="message" id="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>
                   <button type="submit" class="btn big-button button4" name="submit" id="submit">Envoyer <i class="fas fa-at"></i></button>
