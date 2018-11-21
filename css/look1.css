@@ -9,102 +9,99 @@ Black #161510
 Dark Gray #9B9A8F
 */
 
-#look1{
+#look1 {
     background-image: url("../backgrounds/background1.jpg");
     font-family: 'Allerta Stencil'
 }
 
-.h2-1{
+.h2-1 {
     color: #D1CABB;
     font-family: 'Allerta Stencil', sans-serif;
 }
 
-.font1{
+.font1 {
     font-family: 'Allerta Stencil', sans-serif;
 }
 
-#cabinet{
+#cabinet {
     max-height: 75vh;
     display: block;
     border: 5px double #D1CABB;
 }
 
-#cabinet-container{
+#cabinet-container {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-#overlay{
-    background-image: repeating-linear-gradient(
-        45deg,
+#overlay {
+    background-image: repeating-linear-gradient(45deg,
         black,
         transparent 10px,
         black 10px,
-        transparent 20px
-      );
+        transparent 20px);
     position: absolute;
     opacity: 0.5;
 }
 
-#nav1{
+#nav1 {
     background-color: #161510;
     font-family: 'Allerta Stencil';
 }
 
-#nav1 a:link{
+#nav1 a:link {
     color: #D1CABB;
 }
 
-#nav1 a:visited{
+#nav1 a:visited {
     color: #D1CABB;
 }
 
-.preview-pic{
+
+#nav1 .fas {
+    color: #D1CABB;
+}
+
+.preview-pic {
     width: 20vw;
     margin-bottom: 10pt;
-  }
+}
 
-#text-display{
+#text-display {
     background-color: #D1CABB;
     border-radius: 15px;
     border: 5px double #343423;
 }
 
-.button1{
+.button1 {
     background-color: #343423;
     color: #D1CABB;
     height: 7vh;
     width: 10vh;
-  }
+}
 
-  #nav1 .fas{
-      color: #D1CABB;
-  }
+.double-button {
+    margin: 1vh 1vw 1vh 1vw;
+}
 
-  .double-button{
-      margin: 1vh 1vw 1vh 1vw;
-  }
+.display {
+    margin-top: 10pt;
+}
 
-  .display{
-      margin-top: 10pt;
-  }
+.display p {
+    font-weight: bold;
+}
 
-  .display p{
-      font-weight: bold;
-  }
-
-  @media screen and (min-width: 770px){
-      #nav1{
+@media screen and (min-width: 770px) {
+    #nav1 {
         font-size: 16pt;
         height: 43pt;
-      }
+    }
+}
 
-  }
-
-  @media screen and (max-width: 770px){
-    #cabinet{
+@media screen and (max-width: 770px) {
+    #cabinet {
         max-height: 50vh;
     }
-
 }

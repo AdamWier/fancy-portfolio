@@ -1,4 +1,4 @@
-.safe{
+.safe {
     position: absolute;
     left: 16.67%;
     width: 66.66%;
@@ -8,7 +8,7 @@
 
 }
 
-.door{
+.door {
     background-color: #FFFFFF;
     height: 70%;
     width: 70%;
@@ -18,7 +18,7 @@
     border-radius: 5%;
 }
 
-.upper-hinge{
+.upper-hinge {
     height: 25%;
     width: 5%;
     background-color: #2c271e;
@@ -28,7 +28,7 @@
     left: -3%
 }
 
-.lower-hinge{
+.lower-hinge {
     height: 25%;
     width: 5%;
     background-color: #2c271e;
@@ -38,7 +38,7 @@
     left: -3%
 }
 
-.wheel{
+.wheel {
     height: 25%;
     width: 30%;
     background-color: #2c271e;
@@ -50,7 +50,7 @@
 
 }
 
-.handle{
+.handle {
     height: 50%;
     width: 5%;
     background-color: #2c271e;
@@ -63,7 +63,7 @@
     animation-iteration-count: infinite;
 }
 
-.left-leg{
+.left-leg {
     background-color: #D1CABB;
     height: 2%;
     width: 19%;
@@ -73,7 +73,7 @@
     border-radius: 15%
 }
 
-.right-leg{
+.right-leg {
     background-color: #D1CABB;
     height: 2%;
     width: 19%;
@@ -83,14 +83,37 @@
     border-radius: 15%
 }
 
-@keyframes spinner{
-    0% { transform: rotate(0deg);}
-    10% { transform: rotate(93deg);}
-    23% { transform: rotate(93deg);}
-    33% {transform: rotate(-268deg);}
-    46%  {transform: rotate(-268deg);}
-    56% { transform: rotate(122deg);}
-    69% { transform: rotate(122deg);}
-    79% { transform: rotate(0deg);}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(93deg);
+    }
+
+    23% {
+        transform: rotate(93deg);
+    }
+
+    33% {
+        transform: rotate(-268deg);
+    }
+
+    46% {
+        transform: rotate(-268deg);
+    }
+
+    56% {
+        transform: rotate(122deg);
+    }
+
+    69% {
+        transform: rotate(122deg);
+    }
+
+    79% {
+        transform: rotate(0deg);
+    }
 
 }
