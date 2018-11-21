@@ -2,16 +2,15 @@
 
 $msg = "";
 
-if (filter_has_var($_POST, "submit")){
+if (filter_has_var($_POST, "submit")) {
   $name = htmlspecialchars($_POST["name"]);
   $email = htmlspecialchars($_POST["email"]);
   $message = htmlentities($_POST["message"]);
 
-  if (!empty($name) && !empty($email) && !empty($message)){
-    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)){
+  if (!empty($name) && !empty($email) && !empty($message)) {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL === false)) {
       $msg = "Merci de revérifier votre email";
-    }
-    else{
+    } else {
       $toEmail = "wier.adam@gmail.com";
       $subject = "Contact Form";
       $body = "<h2>Contact form submitted</h2>
@@ -19,16 +18,15 @@ if (filter_has_var($_POST, "submit")){
       <h4>Email</h4><p>$email</p>
       <h4>Message</h4><p>$message</p>";
 
-      $header = "MIME-Version: 1.0"."\r\n";
-      $header .= "Content-Type:text/html;charset=UTF-8"."\r\n";
-      $header .= "From: ".$name."<".$email.">"."\r\n";
-      
-      if (mail($toEmail, $subject, $body, $header)){
+      $header = "MIME-Version: 1.0" . "\r\n";
+      $header .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+      $header .= "From: " . $name . "<" . $email . ">" . "\r\n";
+
+      if (mail($toEmail, $subject, $body, $header)) {
         $msg = "Votre email a été enovyé sans problème!";
       }
     }
-  }
-  else{
+  } else {
     $msg = "Merci de remplir tout le formulaire";
   }
 }

@@ -6,51 +6,51 @@ Light Steel Blue #D1D4DA
 Light Slate Gray #88A0B6
 Gray #959190 */
 
-#look2{
+#look2 {
     background-image: url("../backgrounds/background2h.jpg");
     padding-top: 0;
     font-family: 'Dosis';
 }
 
-#me{
+#me {
     border-radius: 100%;
     width: 50%;
     border: solid;
 }
 
-#nav2{
+#nav2 {
     background-color: #3B4CCB;
     font-family: 'Dosis';
 }
 
-#nav2 a:link{
+#nav2 a:link {
     color: #D1D4DA;
 }
 
-#nav2 a:visited{
+#nav2 a:visited {
     color: #D1D4DA;
 }
 
-#nav2 .fas{
+#nav2 .fas {
     color: #D1D4DA;
 }
 
-#element2{
+#element2 {
     background-color: #D1D4DA;
     color: #19212A;
     border: groove #7F6F64;
     padding: 10pt;
 }
 
-.button2{
+.button2 {
     background-color: #3B4CCB;
     color: #D1D4DA;
     width: 160px;
     margin: 5pt;
 }
 
-@media screen and (max-width: 576px){
-    .navbar{
-    display: block !important;
-}
+@media screen and (max-width: 576px) {
+    .navbar {
+        display: block !important;
+    }
 }

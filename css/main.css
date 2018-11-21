@@ -1,8 +1,8 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
-#loading{
+#loading {
     background-color: #161510;
     z-index: 50;
     height: 100%;
@@ -14,19 +14,19 @@ html {
     font-size: 500%;
 }
 
-.loaded{
+.loaded {
     visibility: hidden;
 }
 
-.fadeout{
+.fadeout {
     animation-name: fadeout;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
-#safe-box{
+#safe-box {
     position: relative;
-    display:block;
+    display: block;
     margin: auto;
     margin-top: 12.5%;
     display: block;
@@ -34,48 +34,51 @@ html {
     width: 50vh;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0px;
-    width:100%;
+    width: 100%;
 }
 
-/*Genreal navbar styling */
-.navigation{
-    overflow:hidden;
-    z-index:1;
+.navigation {
+    overflow: hidden;
+    z-index: 1;
     font-size: calc(3pt + 2.5vh);
-  }
-  
-  .navigation li a{
+}
+
+.navigation li a {
     margin: calc(2vw);
-    }
-  
-  .navigation a:link{
-    text-decoration:none;
-    }
-    
-  .navigation a:visited{
-    text-decoration:none;
-    } 
+}
 
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: space-between;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.navigation a:link {
+    text-decoration: none;
+}
 
-.element{
+.navigation a:visited {
+    text-decoration: none;
+}
+
+.nav-link {
+    padding: 30pt;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.element {
     border-radius: 15px;
 }
 
-h2{
+h2 {
     font-size: 60px;
-  }
+}
 
-  .look{
+.look {
     padding-top: 50%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -83,58 +86,79 @@ h2{
     padding-bottom: 50%;
 }
 
-button:hover{
-    box-shadow:0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  
-  button:active {
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
-  .normal-button{
+.normal-button {
     margin: 1vh 0vh 1vh 0vh;
-  }
+}
 
-  .d-flex{
+.d-flex {
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .list{
-      text-align: left;
-  }
-
-  .list-heading{
+.list {
     text-align: left;
 }
 
-.underline{
+.list-heading {
+    text-align: left;
+}
+
+.underline {
     text-decoration: underline;
 }
 
-.nav-link{
-    padding: 30pt;
+#preload1 {
+    background: url(../images/asteroids.png) no-repeat -9999px -9999px;
 }
 
-#preload1 { background: url(../images/asteroids.png) no-repeat -9999px -9999px; }
-#preload2 { background: url(../images/blackjack.png) no-repeat -9999px -9999px; }
-#preload3 { background: url(../images/pomodoro.png) no-repeat -9999px -9999px; }
-#preload4 { background: url(../images/pong.png) no-repeat -9999px -9999px; }
-#preload5 { background: url(../images/twitch.png) no-repeat -9999px -9999px; }
-#preload6 { background: url(../images/simple-ricks.png) no-repeat -9999px -9999px; }
-#preload7 { background: url(../images/simple-ricks.png) no-repeat -9999px -9999px; }
-
-
-
-
-@keyframes fadeout{
-    from {opacity: 1;}
-    to {opacity: 0;}
+#preload2 {
+    background: url(../images/blackjack.png) no-repeat -9999px -9999px;
 }
 
-@media screen and (max-width: 576px){
-    .navbar{
-    display: block !important;
+#preload3 {
+    background: url(../images/pomodoro.png) no-repeat -9999px -9999px;
 }
+
+#preload4 {
+    background: url(../images/pong.png) no-repeat -9999px -9999px;
+}
+
+#preload5 {
+    background: url(../images/twitch.png) no-repeat -9999px -9999px;
+}
+
+#preload6 {
+    background: url(../images/simple-ricks.png) no-repeat -9999px -9999px;
+}
+
+#preload7 {
+    background: url(../images/picscavenger.jpg) no-repeat -9999px -9999px;
+}
+
+
+
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        display: block !important;
+    }
 }

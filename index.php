@@ -11,7 +11,8 @@
     crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Allerta+Stencil|Amatic+SC|Old+Standard+TT|Dosis"
+    rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -31,7 +32,7 @@
 </head>
 
 <body>
-        <!-- Loading screen -->
+  <!-- Loading screen -->
   <div id="loading">
     <div class="row">
       <div class="col-12">
@@ -73,7 +74,7 @@
   <script src="js/main.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    
+
   <?php 
   require("./config/db.php");
 
@@ -123,13 +124,15 @@
   ?>
 
 
-    <!-- Header/navbar-->
-    <div class="container-fluid">
+  <!-- Header/navbar-->
+  <div class="container-fluid">
     <header>
       <nav class="navbar navbar-expand-sm fixed-top navigation" data-toggle="affix" id="nav2">
         <?php include("inc/navbar.php") ?>
       </nav>
     </header>
+
+    <!-- About section -->
     <section class="look" id="look2">
       <a class="nav-link" id="about"></a>
       <div class="element" id="element2">
@@ -198,17 +201,39 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 text-center">            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-linkedin"></i>
-            LinkedIn</button></a></div>
-          <div class="col-md-3 text-center">            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-free-code-camp"></i></i>
-            FreeCodeCamp</button></a></div>
-          <div class="col-md-3 text-center">            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-github-square"></i>
-            GitHub</button></a></div>
-            <div class="col-md-3 text-center">            <a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button2"><i class="fab fa-codepen"></i>
-              CodePen</button></a></div>
+          <div class="col-md-3 text-center">
+            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener">
+              <button type="button" class="btn normal-button button2">
+                <i class="fab fa-linkedin"></i>LinkedIn
+              </button>
+            </a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener">
+              <button type="button" class="btn normal-button button2">
+                <i class="fab fa-free-code-camp"></i>FreeCodeCamp
+              </button>
+            </a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener">
+              <button type="button" class="btn normal-button button2">
+                <i class="fab fa-github-square"></i>GitHub
+              </button>
+            </a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">
+              <button type="button" class="btn normal-button button2">
+                <i class="fab fa-codepen"></i>CodePen
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Certificates section -->
     <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav3">
       <?php include("inc/navbar.php") ?>
     </nav>
@@ -340,6 +365,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Projects section -->
     <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav1">
       <?php include("inc/navbar.php") ?>
     </nav>
@@ -371,49 +398,63 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact section -->
     <nav class="navbar navbar-expand-sm sticky-top navigation" data-toggle="affix" id="nav4">
-        <?php include("inc/navbar.php") ?>
+      <?php include("inc/navbar.php") ?>
     </nav>
     <section class="look" id="look4">
-        <a class="nav-link" id="contact"></a>
-        <div class="element" id="element4">
-          <div class="row">
-      <div class="col-md-4 col-12">
-        <h2 class="h2-4">Contact</h2>
-      </div>
-      <div class="col-md-8 col-12">
-        <div class="row text-center">
-          <div class="col-lg-4">
-            <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-linkedin"></i>
-                LinkedIn</button></a>
+      <a class="nav-link" id="contact"></a>
+      <div class="element" id="element4">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h2 class="h2-4">Contact</h2>
           </div>
-          <div class="col-lg-4">
-            <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-free-code-camp"></i></i>
-                FreeCodeCamp</button></a>
-          </div>
-          <div class="col-lg-4">
-            <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener"><button type="button" class="btn normal-button button4"><i class="fab fa-github-square"></i>
-                GitHub</button></a>
-          </div>
-        </div>
-        <div class="row form-group no-break">
-          <div class="col-12 text-center">
-              <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
-              <label for="name">Votre nom&nbsp: </label><br/>
-              <input type="text" class="form-control" required name="name" id="name" placeholder="Votre nom ici" value="<?php echo isset($_POST["name"]) ? $name : ""; ?>">
-              <label for="email">Votre adresse mail&nbsp: </label>
-              <input type="email" class="form-control" required name="email" id="email" placeholder="Votre adresse mail ici" value="<?php echo isset($_POST["email"]) ? $email : ""; ?>">
-              <label for="message">Votre message&nbsp: </label>
-              <textarea name="message" id="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>            
-            <button type="submit" class="btn big-button button4" name="submit" id="submit">Envoyer <i class="fas fa-at"></i></button>
-              </form>
-              <?php if ($msg != "") : ?>
-              <span><?php echo $msg; ?></span>
-              <?php endif; ?>
+          <div class="col-md-8 col-12">
+            <div class="row text-center">
+              <div class="col-lg-4">
+                <a href="https://www.linkedin.com/in/adamwier/" target="_blank" rel="noopener">
+                  <button type="button" class="btn normal-button button4">
+                    <i class="fab fa-linkedin"></i>LinkedIn
+                  </button>
+                </a>
               </div>
+              <div class="col-lg-4">
+                <a href="https://www.freecodecamp.org/adamwier" target="_blank" rel="noopener">
+                  <button type="button" class="btn normal-button button4">
+                    <i class="fab fa-free-code-camp"></i>FreeCodeCamp
+                  </button>
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <a href="https://www.github.com/AdamWier" target="_blank" rel="noopener">
+                  <button type="button" class="btn normal-button button4">
+                    <i class="fab fa-github-square"></i>GitHub
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row form-group no-break">
+              <div class="col-12 text-center">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
+                  <label for="name">Votre nom&nbsp: </label><br />
+                  <input type="text" class="form-control" required name="name" id="name" placeholder="Votre nom ici"
+                    value="<?php echo isset($_POST[" name"]) ? $name : "" ; ?>">
+                  <label for="email">Votre adresse mail&nbsp: </label>
+                  <input type="email" class="form-control" required name="email" id="email" placeholder="Votre adresse mail ici"
+                    value="<?php echo isset($_POST[" email"]) ? $email : "" ; ?>">
+                  <label for="message">Votre message&nbsp: </label>
+                  <textarea name="message" id="message" class="form-control" required><?php echo isset($_POST["message"]) ? $message : ""; ?></textarea>
+                  <button type="submit" class="btn big-button button4" name="submit" id="submit">Envoyer <i class="fas fa-at"></i></button>
+                </form>
+                <?php if ($msg != "") : ?>
+                <span>
+                  <?php echo $msg; ?></span>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
     </section>
   </div>
 </body>
