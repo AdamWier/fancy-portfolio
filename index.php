@@ -185,9 +185,9 @@ if (filter_has_var(INPUT_POST, "submit")) {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-12 text-center">
+          <div class="col-md-6 col-12 text-center" target="_blank" rel="noopener">
             <a href="./cv/cv-pdf.pdf">
-              <button type="button" class="btn bormal-button button2" target="_blank" rel="noopener">Télécharger CV (PDF)</button>
+              <button type="button" class="btn bormal-button button2">Télécharger CV (PDF)</button>
             </a>
           </div>
           <div class="col-md-6 col-12 text-center">
