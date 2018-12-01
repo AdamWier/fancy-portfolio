@@ -1,8 +1,9 @@
 <?php 
+require("./config/db.php");
 
 $msg = "";
 
-if (filter_has_var($_POST, "submit")) {
+if (filter_has_var(INPUT_POST, "submit")) {
   $name = htmlspecialchars($_POST["name"]);
   $email = htmlspecialchars($_POST["email"]);
   $message = htmlentities($_POST["message"]);
@@ -24,15 +25,18 @@ if (filter_has_var($_POST, "submit")) {
 
       if (mail($toEmail, $subject, $body, $header)) {
         $msg = "Votre email a été enovyé sans problème!";
+        
+        $sqlName = mysqli_real_escape_string($conn, $_POST["name"]);
+        $sqlEmail = mysqli_real_escape_string($conn, $_POST["email"]);
+        $sqlMessage = mysqli_real_escape_string($conn, $_POST["message"]);
+
+        $query = "INSERT INTO submissions(name, email, message) VALUES('$sqlName', '$sqlEmail', '$sqlMessage')";
+
+        mysqli_query($conn, $query);
       }
     }
   } else {
     $msg = "Merci de remplir tout le formulaire";
   }
 }
-
-print_r($_POST);
-echo $msg;
-echo '<br><a href="../index.php">Retourner</a>';
-
 ?>

@@ -79,16 +79,16 @@ $(window).ready(function () {
                 'Plus de projets à voir sur mon profil Codepen</h5></div>'
         })
         $("#drawer3").hover(function () {
-            textDisplay.innerHTML = '<div class="display"><h4>TwitchTV API</h4>' +
-                '<img src="./images/twitch.png" alt="Twitch API" class="preview-pic"><br/>' +
-                '<h5>Projet en <i class="fab fa-html5"></i> et <i class="fab fa-css3-alt"></i> et <i class="fab fa-js-square"></i></h5>' +
-                '<a href="https://codepen.io/donthatedontkill/full/vjrePv/" target="_blank" rel="noopener">' +
-                '<button type="button" class="btn normal-button button1"  aria-label="Voir page de Twitch API"><i class="fas fa-eye"></i></button></a>' +
+            textDisplay.innerHTML = '<div class="display"><h4>Prévisualisation de Markdown</h4>' +
+                '<img src="./images/markdown.png" alt="Prévisualisation de Markdown" class="preview-pic"><br/>' +
+                '<h5>Projet en <i class="fab fa-react"></i> et <img style="height:1.25rem" src="./images/react.ico"></h5>' +
+                '<a href="https://codepen.io/donthatedontkill/full/yQqJxM/" target="_blank" rel="noopener">' +
+                '<button type="button" class="btn normal-button button1"  aria-label="Voir page de Prévisualisation de Markdown"><i class="fas fa-eye"></i></button></a>' +
                 '<h4 class="list-heading">Objectifs&nbsp:</h4>' +
                 '<ul class="list">' +
-                '<li>Javascript</li>' +
-                '<li>APIs/JSON</li>' +
-                '<li>Animation</li>' +
+                '<li>Redux</li>' +
+                '<li>Bootstrap</li>' +
+                '<li>Markdown</li>' +
                 '</ul>' +
                 '<h5><a href="https://codepen.io/donthatedontkill/" target="_blank" rel="noopener">' +
                 '<button type="button" class="btn normal-button button1"  aria-label="Voir profile de Codepen"><i class="fab fa-codepen"></i></button></a><br/>' +
