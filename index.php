@@ -55,7 +55,6 @@
         En train d'aménager...
       </div>
     </div>
-    <div id="preload8"></div>
     <div id="preload1"></div>
     <div id="preload2"></div>
     <div id="preload3"></div>
@@ -63,6 +62,7 @@
     <div id="preload5"></div>
     <div id="preload6"></div>
     <div id="preload7"></div>
+    <div id="preload8"></div>
   </div>
 
 <!-- Form handler -->
